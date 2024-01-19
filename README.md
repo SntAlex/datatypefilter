@@ -14,3 +14,11 @@
 2) terminal should point the folder location, where jar is located (ex. file located in **/home/username/filter**
    folder, you should open terminal there to start **jar -java** command, it's what I faced on linux while testing)
 3) Input files should be in path, there the jar file is located
+
+# Build
+
+To build jar file you can:
+
+- use **mvn package** command (jar file should appear in **target** folder)
+- use Intellij Idea to
+  create [artifact](https://www.jetbrains.com/help/idea/compiling-applications.html#run_packaged_jar)
