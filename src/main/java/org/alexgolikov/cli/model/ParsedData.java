@@ -6,12 +6,12 @@ import java.util.Set;
 public class ParsedData {
     private final Set<String> inputFiles;
     private final FileWriterConfiguration fileWriterConfiguration;
-    private final StatisticConfiguration statisticConfiguration;
+    private final StatisticsConfiguration statisticsConfiguration;
 
-    public ParsedData(Set<String> inputFiles, FileWriterConfiguration fileWriterConfiguration, StatisticConfiguration statisticConfiguration) {
+    public ParsedData(Set<String> inputFiles, FileWriterConfiguration fileWriterConfiguration, StatisticsConfiguration statisticsConfiguration) {
         this.inputFiles = inputFiles;
         this.fileWriterConfiguration = fileWriterConfiguration;
-        this.statisticConfiguration = statisticConfiguration;
+        this.statisticsConfiguration = statisticsConfiguration;
     }
 
     public Set<String> getInputFiles() {
@@ -22,7 +22,7 @@ public class ParsedData {
         return fileWriterConfiguration;
     }
 
-    public StatisticConfiguration getStatisticConfiguration() {
-        return statisticConfiguration;
+    public StatisticsConfiguration getStatisticsConfiguration() {
+        return statisticsConfiguration;
     }
 }

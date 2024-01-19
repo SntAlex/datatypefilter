@@ -1,10 +1,10 @@
-package org.alexgolikov.statistic.model;
+package org.alexgolikov.statistics.model;
 
-public class StatisticValuePair<T> {
+public class StatisticsValuePair<T> {
     private final T value;
     private final String stringValue;
 
-    public StatisticValuePair(T value, String stringValue) {
+    public StatisticsValuePair(T value, String stringValue) {
         this.value = value;
         this.stringValue = stringValue;
     }

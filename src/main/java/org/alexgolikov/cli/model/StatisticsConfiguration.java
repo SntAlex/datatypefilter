@@ -1,15 +1,15 @@
 package org.alexgolikov.cli.model;
 
-public class StatisticConfiguration {
+public class StatisticsConfiguration {
     private final Boolean fullData;
     private final Boolean statisticEnabled;
 
-    public StatisticConfiguration() {
+    public StatisticsConfiguration() {
         statisticEnabled = false;
         fullData = false;
     }
 
-    public StatisticConfiguration(Boolean fullData) {
+    public StatisticsConfiguration(Boolean fullData) {
         this.statisticEnabled = true;
         this.fullData = fullData;
     }

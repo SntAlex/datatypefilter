@@ -3,8 +3,8 @@ package org.alexgolikov.cli;
 import org.alexgolikov.cli.contract.CommandLineParsable;
 import org.alexgolikov.cli.model.FileWriterConfiguration;
 import org.alexgolikov.cli.model.ParsedData;
-import org.alexgolikov.cli.model.StatisticConfiguration;
-import org.alexgolikov.resultdata.ServiceValueResult;
+import org.alexgolikov.cli.model.StatisticsConfiguration;
+import org.alexgolikov.shared.model.ServiceValueResult;
 import org.apache.commons.cli.*;
 
 import java.util.HashSet;
@@ -23,13 +23,13 @@ public class OptionsParser implements CommandLineParsable {
                     cmd.hasOption("a")
             );
 
-            StatisticConfiguration statisticConfiguration = cmd.hasOption("s") || cmd.hasOption("f") ?
-                    new StatisticConfiguration(cmd.hasOption("f")) :
-                    new StatisticConfiguration();
+            StatisticsConfiguration statisticsConfiguration = cmd.hasOption("s") || cmd.hasOption("f") ?
+                    new StatisticsConfiguration(cmd.hasOption("f")) :
+                    new StatisticsConfiguration();
 
             List<String> files = cmd.getArgList();
 
-            ParsedData parsedData = new ParsedData(new HashSet<>(files), fileWriterConfiguration, statisticConfiguration);
+            ParsedData parsedData = new ParsedData(new HashSet<>(files), fileWriterConfiguration, statisticsConfiguration);
 
             return new ServiceValueResult<>(parsedData);
         } catch (ParseException ex) {

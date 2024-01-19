@@ -2,7 +2,7 @@ package org.alexgolikov.filter;
 
 import org.alexgolikov.filter.contract.TypeFilterable;
 import org.alexgolikov.filter.model.TypeData;
-import org.alexgolikov.resultdata.ServiceValueResult;
+import org.alexgolikov.shared.model.ServiceValueResult;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -31,7 +31,7 @@ public class DataTypeFilter implements TypeFilterable {
 
     private Boolean isIntValue(String value) {
         try {
-            Integer.parseInt(value);
+            Long.parseLong(value);
             return true;
         } catch (NumberFormatException e) {
             return false;

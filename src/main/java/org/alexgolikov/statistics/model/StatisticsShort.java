@@ -1,11 +1,11 @@
-package org.alexgolikov.statistic.model;
+package org.alexgolikov.statistics.model;
 
-public class StatisticShort {
+public class StatisticsShort {
     private final Integer integersCount;
     private final Integer doublesCount;
     private final Integer stringsCount;
 
-    public StatisticShort(Integer integersCount, Integer doublesCount, Integer stringsCount) {
+    public StatisticsShort(Integer integersCount, Integer doublesCount, Integer stringsCount) {
         this.integersCount = integersCount;
         this.doublesCount = doublesCount;
         this.stringsCount = stringsCount;

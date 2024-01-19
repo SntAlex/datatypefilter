@@ -1,6 +1,6 @@
 package org.alexgolikov.file.writer.contract;
 
-import org.alexgolikov.resultdata.ServiceResult;
+import org.alexgolikov.shared.model.ServiceResult;
 
 import java.util.List;
 

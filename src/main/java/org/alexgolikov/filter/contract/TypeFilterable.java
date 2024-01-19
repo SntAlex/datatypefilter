@@ -1,7 +1,7 @@
 package org.alexgolikov.filter.contract;
 
-import org.alexgolikov.resultdata.ServiceValueResult;
 import org.alexgolikov.filter.model.TypeData;
+import org.alexgolikov.shared.model.ServiceValueResult;
 
 import java.util.List;
 

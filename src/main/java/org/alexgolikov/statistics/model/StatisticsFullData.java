@@ -1,6 +1,6 @@
-package org.alexgolikov.statistic.model;
+package org.alexgolikov.statistics.model;
 
-public class StatisticFullData {
+public class StatisticsFullData {
     private final String minimalValue;
     private final String maximumValue;
     private final String averageValue;
@@ -9,7 +9,7 @@ public class StatisticFullData {
     private final Integer longestStringSize;
 
 
-    public StatisticFullData(String minimalValue, String maximumValue, String averageValue, String sumValue, Integer shortestStringSize, Integer longestStringSize) {
+    public StatisticsFullData(String minimalValue, String maximumValue, String averageValue, String sumValue, Integer shortestStringSize, Integer longestStringSize) {
         this.minimalValue = minimalValue;
         this.maximumValue = maximumValue;
         this.averageValue = averageValue;

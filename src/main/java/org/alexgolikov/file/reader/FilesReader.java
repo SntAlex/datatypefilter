@@ -2,7 +2,7 @@ package org.alexgolikov.file.reader;
 
 import org.alexgolikov.file.reader.contract.FileReadable;
 import org.alexgolikov.file.reader.contract.FilesReadable;
-import org.alexgolikov.resultdata.ServiceValueResult;
+import org.alexgolikov.shared.model.ServiceValueResult;
 
 import java.util.ArrayList;
 import java.util.List;

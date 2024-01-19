@@ -3,7 +3,7 @@ package org.alexgolikov.file.writer;
 import org.alexgolikov.file.writer.contract.FilesWritable;
 import org.alexgolikov.file.writer.contract.TypeListFileWritable;
 import org.alexgolikov.filter.model.TypeData;
-import org.alexgolikov.resultdata.ServiceResult;
+import org.alexgolikov.shared.model.ServiceResult;
 
 import java.util.Objects;
 

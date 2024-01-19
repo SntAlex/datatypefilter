@@ -1,4 +1,4 @@
-package org.alexgolikov.resultdata;
+package org.alexgolikov.shared.model;
 
 public class ServiceResult {
     protected final Boolean successful;

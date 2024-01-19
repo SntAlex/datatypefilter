@@ -3,7 +3,7 @@ package org.alexgolikov.configuration;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.alexgolikov.configuration.contract.ConfigurationParsable;
 import org.alexgolikov.configuration.model.OptionConfiguration;
-import org.alexgolikov.resultdata.ServiceValueResult;
+import org.alexgolikov.shared.model.ServiceValueResult;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 

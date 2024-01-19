@@ -1,4 +1,4 @@
-package org.alexgolikov.resultdata;
+package org.alexgolikov.shared.model;
 
 public final class ServiceValueResult<T> extends ServiceResult {
     private final T value;

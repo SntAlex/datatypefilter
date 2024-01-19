@@ -1,7 +1,7 @@
 package org.alexgolikov.file.writer;
 
 import org.alexgolikov.file.writer.contract.TypeListFileWritable;
-import org.alexgolikov.resultdata.ServiceResult;
+import org.alexgolikov.shared.model.ServiceResult;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -21,7 +21,7 @@ public class TypeListFileWriter implements TypeListFileWritable {
 
         Path path = Paths.get(fullPath);
 
-        try (BufferedWriter writer = Files.newBufferedWriter(path, StandardCharsets.UTF_8, isAdding ? StandardOpenOption.APPEND : StandardOpenOption.CREATE_NEW)) {
+        try (BufferedWriter writer = Files.newBufferedWriter(path, StandardCharsets.UTF_8, isAdding ? StandardOpenOption.APPEND : StandardOpenOption.CREATE)) {
             for (String str : data) {
                 writer.write(str.concat("\n"));
             }
