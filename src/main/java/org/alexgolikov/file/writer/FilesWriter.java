@@ -24,7 +24,7 @@ public class FilesWriter implements FilesWritable {
             path = ".";
         }
 
-        String pathWithPrefix = path.concat("/").concat(prefix);
+        String pathWithPrefix = path.concat(!path.endsWith("/") ? "/" : "").concat(prefix);
 
         ServiceResult integersResult = typeListFileWriter.writeToFile(pathWithPrefix.concat(integersFileName), isAdding, typeData.getIntegers());
 
