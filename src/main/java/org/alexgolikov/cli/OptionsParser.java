@@ -29,6 +29,10 @@ public class OptionsParser implements CommandLineParsable {
 
             List<String> files = cmd.getArgList();
 
+            if (files.isEmpty()) {
+                return new ServiceValueResult<>("One or more files to filter should be used");
+            }
+
             ParsedData parsedData = new ParsedData(new HashSet<>(files), fileWriterConfiguration, statisticsConfiguration);
 
             return new ServiceValueResult<>(parsedData);
