@@ -7,6 +7,7 @@ import org.alexgolikov.cli.model.ParsedData;
 import org.alexgolikov.cli.model.StatisticsConfiguration;
 import org.alexgolikov.configuration.ConfigurationJsonParser;
 import org.alexgolikov.configuration.contract.ConfigurationParsable;
+import org.alexgolikov.configuration.model.OptionsConfiguration;
 import org.alexgolikov.file.reader.FileReader;
 import org.alexgolikov.file.reader.FilesReader;
 import org.alexgolikov.file.reader.contract.FilesReadable;
@@ -22,7 +23,6 @@ import org.alexgolikov.statistics.StatisticsHandler;
 import org.alexgolikov.statistics.contract.Statistical;
 import org.alexgolikov.statistics.model.StatisticsFull;
 import org.alexgolikov.statistics.model.StatisticsShort;
-import org.apache.commons.cli.Options;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +33,7 @@ public class Main {
 
     public static void main(String[] args) {
         ConfigurationParsable configurationJsonParser = new ConfigurationJsonParser();
-        ServiceValueResult<Options> optionsResult = configurationJsonParser.retrieveParserOptions(FILENAME);
+        ServiceValueResult<OptionsConfiguration> optionsResult = configurationJsonParser.retrieveParserOptions(FILENAME);
 
         closeIfServiceError(optionsResult);
 
